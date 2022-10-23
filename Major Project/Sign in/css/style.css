@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.Login-Form {
+  width: 400px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding: 20px;
+  margin: 6% auto 0;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+
+.Login-button {
+  width: 100%;
+  background-color: red;
+  border-radius: 4px;
+  padding: 6px;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+}
+.Login-button:active {
+  background-color: black;
+  color: red;
+}
+
+.Login-Form h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: black;
+}
+
+.input-box {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid black;
+}
+
+.safety-text {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.NetID-text {
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.Password-text {
+  margin: 0px;
+  text-align: left;
+  font-size: 12px;
+}
+.reminder-text {
+  font-size: 12px;
+  color: red;
+}

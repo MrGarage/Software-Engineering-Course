@@ -1,0 +1,387 @@
+<html>
+<head>
+  <title>Donator Form</title>
+</head>
+ 
+<body>
+  <h2>Donator Form</h2>
+ 
+  <form id="theForm" method="post" action="donatorform.php">
+    <table>
+    <tr>
+      <td>Name<span class="red"></span></td>
+      <td><input type="text" id="name" name="name"/></td>
+      <td id="nameError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Date<span class="red"></span></td>
+      <td><select id="month" name="month">
+        <option value="" selected>Please select month...</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select><br /></td>
+      <td><select id="day" name="day">
+        <option value="" selected>Please select day...</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+      </select><br /></td>
+      <td><select id="year" name="year">
+        <option value="" selected>Please select year...</option>
+        <option value="2016">2016</option>
+        <option value="2017">2017</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+      </select><br /></td>
+      <td id="dateError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Address</td>
+      <td><input type="text" id="address" name="address" /></td>
+      <td id="addressError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>City</td>
+      <td><input type="text" id="city" name="city" /></td>
+      <td id="cityError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>State</td>
+      <td><input type="text" id="state" name="state" /></td>
+      <td id="stateError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Zip Code<span class="red"></span></td>
+      <td><input type="text" id="zipcode" name="zipcode" /></td>
+      <td id="zipcodeError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Email<span class="red"></span></td>
+      <td><input type="text" id="email" name="email" /></td>
+      <td id="emailError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Phone Number<span class="red"></span></td>
+      <td><input type="text" id="phonenumber" name="phonenumber" /></td>
+      <td id="phonenumberError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td><h4>Donation Categories:</h4></td></tr>
+    <tr>
+      <td><h4>Please enter the amount donated for each category!</h4></td></tr>
+    <tr>
+      <td><h4>(Leave it blank if nothing in that category.)</h4></td></tr>
+    <tr>
+      <td>Applesauce<span class="red"></span></td>
+      <td><input type="text" id="applesauce" name="applesauce" /></td>
+      <td id="applesauceError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Beans<span class="red"></span></td>
+      <td><input type="text" id="beans" name="beans" /></td>
+      <td id="beansError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Broth<span class="red"></span></td>
+      <td><input type="text" id="broth" name="broth" /></td>
+      <td id="brothError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Canned Fish<span class="red"></span></td>
+      <td><input type="text" id="cannedfish" name="cannedfish" /></td>
+      <td id="cannedfishError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Cereal<span class="red"></span></td>
+      <td><input type="text" id="cereal" name="cereal" /></td>
+      <td id="cerealError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Condiments<span class="red"></span></td>
+      <td><input type="text" id="condiments" name="condiments" /></td>
+      <td id="condimentsError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Cream of Wheat and Grits<span class="red"></span></td>
+      <td><input type="text" id="cream" name="cream" /></td>
+      <td id="creamError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Fruit<span class="red"></span></td>
+      <td><input type="text" id="fruit" name="fruit" /></td>
+      <td id="fruitError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Mac n Cheese<span class="red"></span></td>
+      <td><input type="text" id="mac" name="mac" /></td>
+      <td id="macError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Oatmeal<span class="red"></span></td>
+      <td><input type="text" id="oatmeal" name="oatmeal" /></td>
+      <td id="oatmealError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Pasta<span class="red"></span></td>
+      <td><input type="text" id="pasta" name="pasta" /></td>
+      <td id="pastaError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Peanut Butter<span class="red"></span></td>
+      <td><input type="text" id="peanut" name="peanut" /></td>
+      <td id="peanutError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Plant Fusion<span class="red"></span></td>
+      <td><input type="text" id="plant" name="plant" /></td>
+      <td id="plantError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Potatoes<span class="red"></span></td>
+      <td><input type="text" id="potatoes" name="potatoes" /></td>
+      <td id="potatoesError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Ramen<span class="red"></span></td>
+      <td><input type="text" id="ramen" name="ramen" /></td>
+      <td id="ramenError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Refrigerated Items<span class="red"></span></td>
+      <td><input type="text" id="refrigerated" name="refrigerated" /></td>
+      <td id="refrigeratedError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Rice<span class="red"></span></td>
+      <td><input type="text" id="rice" name="rice" /></td>
+      <td id="riceError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Seasonal Items<span class="red"></span></td>
+      <td><input type="text" id="seasonal" name="seasonal" /></td>
+      <td id="seasonalError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Snacks<span class="red"></span></td>
+      <td><input type="text" id="snacks" name="snacks" /></td>
+      <td id="snacksError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Soup<span class="red"></span></td>
+      <td><input type="text" id="soup" name="soup" /></td>
+      <td id="soupError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Spices<span class="red"></span></td>
+      <td><input type="text" id="spices" name="spices" /></td>
+      <td id="spicesError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Tomato and Pasta Sauce<span class="red"></span></td>
+      <td><input type="text" id="sauce" name="sauce" /></td>
+      <td id="sauceError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Vegetables<span class="red"></span></td>
+      <td><input type="text" id="vegetables" name="vegetables" /></td>
+      <td id="vegetablesError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td>Other<span class="red"></span></td>
+      <td><input type="text" id="other" name="other" /></td>
+      <td id="otherError" class="red">&nbsp;</td></tr>
+    <tr>
+      <td><h4>Thank you for your donation!</h4></td></tr>
+    <tr>
+      <td><h4>PLEASE VALIDATE THIS FORM</h4></td></tr>
+    <tr>
+      <td><h4>AND THEN ONLY SUBMIT IF YOUR FORM IS VALIDATED!</h4></td></tr>
+    <tr>
+      <td><button type="button" onclick="myFunction()">Validate</button></td></tr>
+    <tr>
+      <td id="message" name="message">Please validate first!</td></tr>
+    <tr>
+      <td><input type="submit" value="Submit" id="submit"/>&nbsp;</td>  
+    </table>
+  </form>
+  <script>
+      function myFunction() {
+        var error = "";
+        error += isAlphabetic("name", "Please enter your name!\n");
+        error += isSelected("month", "Please select a month!\n");
+        error += isSelected("day", "Please select a day!\n");
+        error += isSelected("year", "Please select a year!\n");
+        error += isNotEmpty("address", "Please enter your address!\n");
+        error += isAlphabetic("city", "Please enter your city!\n");
+        error += isAlphabetic("state", "Please enter your state!\n");
+        error += isNumeric("zipcode", "Please enter your zip code!\n");
+        error += isLengthMinMax("zipcode", "Please enter a 5-digit zip code!\n", 5, 5);
+        error += isValidEmail("email", "Enter a valid email!\n");
+        error += isNumeric("phonenumber", "Please enter a valid phone number (only numbers)!\n");
+        error += isNumeric2("applesauce", "Please enter a number amount for Applesauce!\n");
+        error += isNumeric2("beans", "Please enter a number amount for Beans!\n");
+        error += isNumeric2("broth", "Please enter a number amount for Broth!\n");
+        error += isNumeric2("cannedfish", "Please enter a number amount for Canned Fish!\n");
+        error += isNumeric2("cereal", "Please enter a number amount for Cereal!\n");
+        error += isNumeric2("condiments", "Please enter a number amount for Condiments!\n");
+        error += isNumeric2("cream", "Please enter a number amount for Cream of Wheat and Grits!\n");
+        error += isNumeric2("fruit", "Please enter a number amount for Fruit!\n");
+        error += isNumeric2("mac", "Please enter a number amount for Mac n Cheese!\n");
+        error += isNumeric2("oatmeal", "Please enter a number amount for Oatmeal!\n");
+        error += isNumeric2("pasta", "Please enter a number amount for Pasta!\n");
+        error += isNumeric2("peanut", "Please enter a number amount for Peanut Butter!\n");
+        error += isNumeric2("plant", "Please enter a number amount for Plant Fusion!\n");
+        error += isNumeric2("potatoes", "Please enter a number amount for Potatoes!\n");
+        error += isNumeric2("ramen", "Please enter a number amount for Ramen!\n");
+        error += isNumeric2("refrigerated", "Please enter a number amount for Refrigerated Items!\n");
+        error += isNumeric2("rice", "Please enter a number amount for Rice!\n");
+        error += isNumeric2("seasonal", "Please enter a number amount for Seasonal Items!\n");
+        error += isNumeric2("snacks", "Please enter a number amount for Snacks!\n");
+        error += isNumeric2("soup", "Please enter a number amount for Soup!\n");
+        error += isNumeric2("spices", "Please enter a number amount for Spices!\n");
+        error += isNumeric2("sauce", "Please enter a number amount for Tomato and Pasta Sauce!\n");
+        error += isNumeric2("vegetables", "Please enter a number amount for Vegetables!\n");
+        error += isNumeric2("other", "Please enter a number amount for Other!");
+        error += somethingDonated(["applesauce","beans","broth","cannedfish","cereal","condiments","cream",
+            "fruit","mac","oatmeal","pasta","peanut","plant","potatoes","ramen","refrigerated","rice",
+            "seasonal","snacks","soup","spices","sauce","vegetables","other"], "Please enter at least one donation!");
+        if (error=="") {
+            document.getElementById("message").innerHTML = "Validated! Press submit!";
+        }
+        else {
+            document.getElementById("message").innerHTML = error;
+        }
+    }
+
+    function somethingDonated(inputArray, errorMsg) {
+        var isValid = false;
+        for (var i=0; i<inputArray.length; i++) {
+            var inputElement = document.getElementById(inputArray[i]);
+            var errorElement = document.getElementById(inputArray[i] + "Error");
+            var inputValue = inputElement.value.trim();
+            if (inputValue.length !== 0) {
+                isValid = true;
+            }
+        }
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    } 
+ 
+    // Return true if the input value is not empty
+    function isNotEmpty(inputId, errorMsg) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value.trim();
+        var isValid = (inputValue.length !== 0);  // boolean
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+ 
+    // Return true if the input value contains only digits (at least one)
+    function isNumeric(inputId, errorMsg) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value.trim();
+        var isValid = (inputValue.search(/^[0-9]+$/) !== -1);
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+
+    // Return true if the input value contains only digits (or nothing)
+    function isNumeric2(inputId, errorMsg) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value.trim();
+        var isValid = (inputValue.search(/^[0-9]+$/) !== -1) || (inputValue.length == 0);
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+
+    // Return true if the input value contains only letters (at least one)
+    function isAlphabetic(inputId, errorMsg) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value.trim();
+        var isValid = inputValue.match(/^[a-zA-Z ]+$/);
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+ 
+    // Return true if the input length is between minLength and maxLength
+    function isLengthMinMax(inputId, errorMsg, minLength, maxLength) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value.trim();
+        var isValid = (inputValue.length >= minLength) && (inputValue.length <= maxLength);
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+ 
+    // Return true if the input value is a valid email address
+    // (For illustration only. Should use regexe in production.)
+    function isValidEmail(inputId, errorMsg) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value;
+        var atPos = inputValue.indexOf("@");
+        var dotPos = inputValue.lastIndexOf(".");
+        var isValid = (atPos > 0) && (dotPos > atPos + 1) && (inputValue.length > dotPos + 2);
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+ 
+    // Return true if selection is made (not default of "") in <select> input
+    function isSelected(inputId, errorMsg) {
+        var inputElement = document.getElementById(inputId);
+        var errorElement = document.getElementById(inputId + "Error");
+        var inputValue = inputElement.value;
+        // You need to set the default value of <select>'s <option> to "".
+        var isValid = inputValue !== "";
+        if (isValid) {
+            return "";
+        }
+        else {
+            return errorMsg;
+        }
+    }
+  </script>
+</body>
+</html>
